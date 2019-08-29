@@ -1,13 +1,12 @@
-* {
-    margin: 0%;
-}
 
-body {
-    background-color: #ff6464;
+body 
+{
+    margin: 0;
+    padding: 0;
 }
 
 .skeleton {
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 #name {
@@ -21,6 +20,109 @@ body {
     font-size: 70px;
     font-family: 'Baloo Chettan', cursive;
 }
+
+section 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section .wave 
+{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(wave.png);
+    animation: animate 10s linear infinite;
+}
+section .wave:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top: 0;
+    left: 0;
+    background: url(wave.png);
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+
+section .wave:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top: 0;
+    left: 0;
+    background: url(wave.png);
+    opacity: 0.4;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+
+section .wave2
+{
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(wave2.png);
+    animation: animate 10s linear infinite;
+}
+section .wave2:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top: 0;
+    left: 0;
+    background: url(wave2.png);
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+
+section .wave2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top: 0;
+    left: 0;
+    background: url(wave2.png);
+    opacity: 0.4;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse
+{
+    0%
+    {
+        background-position: 1360px;
+    }
+    100%
+    {
+        background-position: 0;
+    }
+}
+
 
 .wrapper { 
     height: 100%;
