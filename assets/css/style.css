@@ -1,19 +1,18 @@
 
-body 
-{
+* {
     margin: 0;
     padding: 0;
 }
 
 .skeleton {
     text-align: center;
+    padding-top: 25vh;
     text-decoration: none;
     font-family: 'Days One', sans-serif;
 }
 
 #name {
-    padding-top: 25vh;
-    font-size:5vh
+    font-size:4vh
 }
 
 #email {
@@ -61,7 +60,7 @@ section .wave
 {
     position: absolute;
     width: 100%;
-    height: 143px;
+    height: 141px;
     bottom: 0;
     left: 0;
     background: url(wave.png);
@@ -71,7 +70,7 @@ section .wave:before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 143px;
+    height: 141px;
     top: 0;
     left: 0;
     background: url(wave.png);
@@ -83,7 +82,7 @@ section .wave:after {
     content: '';
     position: absolute;
     width: 100%;
-    height: 143px;
+    height: 141px;
     top: 0;
     left: 0;
     background: url(wave.png);
@@ -95,7 +94,7 @@ section .wave:after {
 section .wave2
 {
     width: 100%;
-    height: 143px;
+    height: 141px;
     bottom: 0;
     left: 0;
     background: url(wave2.png);
@@ -105,7 +104,7 @@ section .wave2:before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 143px;
+    height: 141px;
     top: 0;
     left: 0;
     background: url(wave2.png);
@@ -117,7 +116,7 @@ section .wave2:after {
     content: '';
     position: absolute;
     width: 100%;
-    height: 143px;
+    height: 141px;
     top: 0;
     left: 0;
     background: url(wave2.png);
@@ -153,11 +152,16 @@ section .wave2:after {
 .wrapper { 
     height: 100%;
     width: 100%;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
+    background: #fc4e4e;
+}
+
+
+/* <<<<<<<<< RAINBOW BACKGROUND >>>>>>>> */
+
+/* .wrapper { 
+    height: 100%;
+    width: 100%;
+    background: #fc4e4e;
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
   
@@ -185,6 +189,6 @@ section .wave2:after {
       0%{background-position:0% 82%}
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
-  }
+  } */
 
 
