@@ -10,7 +10,7 @@ body {
 
 .skeleton {
     text-align: center;
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
     text-decoration: none;
     font-family: 'Days One', sans-serif;
 }
