@@ -10,7 +10,7 @@ body {
 
 .skeleton {
     text-align: center;
-    /* padding-top: 25vh; */
+    padding-top: 25vh;
     text-decoration: none;
     font-family: 'Days One', sans-serif;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .fa {
-    padding: 2vh;;
+    padding: 2vh;
     font-size: 30px;
     width: 20px;
     text-align: center;
@@ -75,8 +75,6 @@ section .wave:before {
     position: absolute;
     width: 100%;
     height: 141px;
-    top: 0;
-    left: 0;
     background: url(wave.png);
     opacity: 0.4;
     animation: animate-reverse 10s linear infinite;
@@ -87,8 +85,6 @@ section .wave:after {
     position: absolute;
     width: 100%;
     height: 141px;
-    top: 0;
-    left: 0;
     background: url(wave.png);
     opacity: 0.4;
     animation-delay: -5s;
@@ -100,8 +96,6 @@ section .wave2
     content: '';
     width: 100%;
     height: 141px;
-    bottom: 0;
-    left: 0;
     background: url(wave2.png);
     animation: animate 10s linear infinite;
 }
@@ -110,8 +104,6 @@ section .wave2:before {
     position: absolute;
     width: 100%;
     height: 141px;
-    top: 0;
-    left: 0;
     background: url(wave2.png);
     opacity: 0.4;
     animation: animate-reverse 10s linear infinite;
@@ -122,8 +114,6 @@ section .wave2:after {
     position: absolute;
     width: 100%;
     height: 141px;
-    top: 0;
-    left: 0;
     background: url(wave2.png);
     opacity: 0.4;
     animation-delay: -5s;
