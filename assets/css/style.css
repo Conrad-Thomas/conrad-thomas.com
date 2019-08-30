@@ -143,17 +143,17 @@ section .wave2:after {
     }
 }
 
-.wrapper { 
+/* .wrapper { 
     background: #fc4e4e;
     height: 100%;
     width: 100%;
     background-size: 1800% 1800%;
-}
+} */
 
 
 /* <<<<<<<<< RAINBOW BACKGROUND >>>>>>>> */
 
-/* .wrapper { 
+.wrapper { 
     height: 100%;
     width: 100%;
     background: #fc4e4e;
@@ -184,6 +184,6 @@ section .wave2:after {
       0%{background-position:0% 82%}
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
-  } */
+  }
 
 
