@@ -151,12 +151,47 @@ section .wave2:after {
 } */
 
 
+
+
+  /* <<<<<<<<<< SWITCH TO TOGGLE THE RAINBOW BACKGROUND >>>>>>>>> */
+  /* .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
+  .switch::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+  }
+  .checkbox:checked + .switch::after {
+    left : 20px;
+  }
+  .checkbox:checked + .switch {
+    background-color: black;
+  }
+  .checkbox {
+    display : none;
+  } */
+
+
 /* <<<<<<<<< RAINBOW BACKGROUND >>>>>>>> */
 
 .wrapper { 
-    height: 100%;
-    width: 100%;
-    background: #fc4e4e;
+  height: 100%;
+  width: 100%;
+  /* set mobile to red */
+  background: #fc4e4e;  
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
   
@@ -185,5 +220,3 @@ section .wave2:after {
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
   }
-
-
