@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+body {
+    background-color: #232C33;
+}
+
+
+/* ----- NAV BAR W/ DROPDOWN ----- */
+nav {
+    width: 100%;
+    /* background: #DB3A34; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+nav a {
+    display: flex;
+    /* Top/ Right/ Bottom/ Left */
+    color: black;
+    padding: 20px 40px 20px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: #232C33;
+    color:white;
+    transition: 0.5s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav li:hover .dropdown-1 li {
+    top: 0;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav ul li ul {
+    background-color: transparent;
+}
+
+nav ul li ul a:hover, .nav-active {
+    background-color: #232C33;
+    color: white;
+}
+
+.dropdown-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-1 li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-1 ul li:hover {
+    display: block;
+}
+
+/* ---------------------- */
+
+footer {
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+
+section 
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+ 
+section .wave 
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 141px;
+    top: 20%;
+    left: 0;
+    background: url(/assets/img/wave4.png);
+    animation: animate 10s linear infinite;
+}
+section .wave:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 141px;
+    background: url(/assets/img/wave4.png);
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+
+section .wave:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 141px;
+    background: url(/assets/img/wave4.png);
+    fill: black;
+    opacity: 0.4;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+
+.wave-background {
+    background-color: white;
+    height: 35vh;
+    top: 20%;
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse
+{
+    0%
+    {
+        background-position: 1360px;
+    }
+    100%
+    {
+        background-position: 0;
+    }
+}
+
+.main-container {
+    padding-top: 10%;
+    text-align: center;
+    color:white;
+    width: 100%;
+}
